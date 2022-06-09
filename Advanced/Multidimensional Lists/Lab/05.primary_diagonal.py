@@ -7,9 +7,8 @@ for _ in range(rows):
 
 diagonal_sum = 0
 
-for row_index in range(rows):
-    for column_index in range(rows):
-        if row_index == column_index:
-            diagonal_sum += matrix[row_index][column_index]
+for i in range(len(matrix)):
+    diagonal_sum += matrix[i][i]
+
 
 print(diagonal_sum)
